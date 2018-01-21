@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
         <module name="dao" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.5" />
       <module name="dao" target="1.5" />
       <module name="spring-example-Jujube" target="1.5" />
+      <module name="web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

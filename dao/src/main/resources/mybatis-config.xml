@@ -6,7 +6,7 @@
 
     <properties resource="db.properties"/>
     <typeAliases>
-        <typeAlias alias="Goods" type="daoclass.Goods"/>
+        <typeAlias alias="User" type="objects.User"/>
     </typeAliases>
 
     <environments default="development">
@@ -22,7 +22,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="mapper/goods.xml"/>
+        <mapper resource="mapper/user.xml"/>
     </mappers>
 
 </configuration>

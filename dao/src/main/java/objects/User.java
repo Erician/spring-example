@@ -10,4 +10,9 @@ public class User {
     public User(){
 
     }
+    public String toString(){
+        return "id="+this.id+", nickName="+this.nickName+", sex="+this.sex
+                +", phoneNumber="+this.phoneNumber+", mail="+this.mail;
+    }
+
 }
