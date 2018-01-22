@@ -1,0 +1,3 @@
+com/eric/jujube/dao/interfaces/UserMapper.class
+com/eric/jujube/dao/impl/UserMapperImpl.class
+com/eric/jujube/dao/objects/User.class

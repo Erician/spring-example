@@ -1,7 +1,8 @@
-package impl;
+package com.eric.jujube.dao.impl;
 
-import interfaces.UserMapper;
-import objects.User;
+import com.eric.jujube.dao.interfaces.UserMapper;
+import com.eric.jujube.dao.objects.User;
+
 import org.springframework.dao.DataAccessException;
 
 public class UserMapperImpl implements UserMapper{

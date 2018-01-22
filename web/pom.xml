@@ -13,7 +13,46 @@
     <packaging>war</packaging>
     <name>jujube-web</name>
 
-     
 
+    <build>
+        <finalName>jujube-web</finalName>
+        <!-- Instructing the resources plugin to filter certain directories -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+    <profiles>
+        <!-- Development environment @ my laptop -->
+        <profile>
+            <id>development</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <db.driverClass>com.mysql.cj.jdbc.Driver</db.driverClass>
+                <db.connectionURL>jdbc:mysql://localhost:3306/Jujube</db.connectionURL>
+                <db.username>root</db.username>
+                <db.password>mm102012</db.password>
+            </properties>
+        </profile>
+        <!-- Production environment @ production server -->
+        <profile>
+            <id>production</id>
+            <properties>
+                <db.driverClass>com.mysql.cj.jdbc.Driver</db.driverClass>
+                <db.connectionURL>jdbc:mysql://localhost:3306/Jujube</db.connectionURL>
+                <db.username>root</db.username>
+                <db.password>mm102012</db.password>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
+
