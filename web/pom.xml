@@ -25,6 +25,13 @@
                     <include>**/*</include>
                 </includes>
             </resource>
+            <resource>
+                <directory>spring-example-Jujube/dao/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
         </resources>
     </build>
 
